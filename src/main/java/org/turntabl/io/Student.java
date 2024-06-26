@@ -36,4 +36,13 @@ public class Student implements Nameable, HasLevel {
     public Level getLevel() {
         return level;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "grades=" + grades +
+                ", name='" + name + '\'' +
+                ", level=" + level +
+                '}';
+    }
 }
