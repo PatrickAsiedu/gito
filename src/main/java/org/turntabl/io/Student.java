@@ -1,6 +1,7 @@
 package org.turntabl.io;
 
 import java.util.List;
+import java.util.stream.DoubleStream;
 
 public class Student implements Nameable, HasLevel {
     private List<Double> grades;
@@ -12,6 +13,11 @@ public class Student implements Nameable, HasLevel {
         this.name=name;
         this.level=level;
     }
+
+
+//    public DoubleStream getGradesAsDoubleStream(){
+//        return
+//    }
 
     public double getAverageGrade() {
         if (grades.isEmpty()) {
